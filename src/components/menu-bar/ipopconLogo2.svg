@@ -1,0 +1,15 @@
+<svg width="100" height="27" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#ffffff" id="canvas_background" height="29" width="102" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text font-style="normal" font-weight="bold" transform="matrix(4.179475757334771,0,0,4.216163792874551,490.1795701786885,1018.9669846230972) " xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="6" id="svg_1" y="-236.971725" x="-116.955143" stroke-width="0" fill="#ff7f00">Ipopcon</text>
+ </g>
+</svg>

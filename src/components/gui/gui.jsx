@@ -75,9 +75,9 @@ const GUIComponent = props => {
                             onSelect={onTabSelect}
                         >
                             <TabList className={tabClassNames.tabList}>
-                                <Tab className={tabClassNames.tab}>Blocks</Tab>
-                                <Tab className={tabClassNames.tab}>Costumes</Tab>
-                                <Tab className={tabClassNames.tab}>Sounds</Tab>
+                                <Tab className={tabClassNames.tab}>블록</Tab>
+                                <Tab className={tabClassNames.tab}>모양</Tab>
+                                <Tab className={tabClassNames.tab}>소리</Tab>
                             </TabList>
                             <TabPanel className={tabClassNames.tabPanel}>
                                 <Box className={styles.blocksWrapper}>
