@@ -66,6 +66,10 @@ const MenuBar = function MenuBar () {
 										<input id="ACC_AVG" type="checkbox" />
 										<span className={styles.checkmark}></span>
 									</label>
+									<label className={styles.container}>IR_TEMP
+										<input id="IR_TEMP" type="checkbox" />
+										<span className={styles.checkmark}></span>
+									</label>
 								</div>
 								<div className={styles.checkmarkBox}>
 						   			<h6></h6>

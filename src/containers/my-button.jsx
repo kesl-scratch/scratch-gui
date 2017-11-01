@@ -11,17 +11,17 @@ var W3CWebSocket = require('websocket').w3cwebsocket;
 var modal = null;
 var ChartData = null;
 var Sensors = [];
-var numberOfSensors = 16;
+var numberOfSensors = 17;
 var numberOfDataHistory = 10;
 var nameOfSensors = ["ACC_X", "ACC_Y", "ACC_Z", "ACC_AVG",
                     "MAG_X", "MAG_Y", "MAG_Z", "TEMP",
                     "GYRO_X", "GYRO_Y", "GYRO_Z", "LUX",
-                    "BTN_1", "BTN_2", "BARO", "ALT"];
+                    "BTN_1", "BTN_2", "BARO", "ALT", "IR_TEMP"];
 
-var min_raw_number = 2; // 최소한 2는 되야함.
-var max_raw_nunmber = 5; // 표시하는 최대 센서의 개수.
+var min_raw_number = 2; // min chart raw element. (minimum 2)
+var max_raw_nunmber = 5; // max char raw eldment.
 var client; // websocket client
-var tmp2 = [37.8,30.9,25.4,11.7,11.9,8.8,7.6,12.3,16.9,12.8];
+//var tmp2 = [37.8,30.9,25.4,11.7,11.9,8.8,7.6,12.3,16.9,12.8]; // for test sensor data
 
 var sensor_data = null;
 
@@ -59,15 +59,15 @@ function Sensor(sensorName) {
 
 function Charts() {
     this.sensorName = [''];
-    this.sensorData = [[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]];
+    this.sensorData = [[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]]; // frist raw : reference
     this.length = 1;
 
     this.build = function(Sensors) {
-        for(var i = 0; i < 16; i++) {
+        for(var i = 0; i < numberOfSensors; i++) {
             if (Sensors[i].isCheckBoxActive == true) {
                 this.sensorName[this.length] = Sensors[i].name;
 
-                for (var j = 0; j < 10; j++) {
+                for (var j = 0; j < numberOfDataHistory; j++) {
                     this.sensorData[j][this.length] = Sensors[i].dataQueue.dataStore[j];
                 }
 
@@ -154,6 +154,7 @@ window.onclick = function(event) {
     var cb_ACC_Y = document.getElementById('ACC_Y');
     var cb_ACC_Z = document.getElementById('ACC_Z');
     var cb_ACC_AVG = document.getElementById('ACC_AVG');
+    var cb_IR_TEMP = document.getElementById('IR_TEMP');
      //////////////////// Group 2 ///////////////////////
     var cb_MAG_X = document.getElementById('MAG_X');
     var cb_MAG_Y = document.getElementById('MAG_Y');
@@ -243,6 +244,10 @@ window.onclick = function(event) {
     }
     cb_ACC_AVG.onclick = function() {
         controlCheckBox(cb_ACC_AVG, 3);
+        showChart();
+    }
+    cb_IR_TEMP.onclick = function() {
+        controlCheckBox(cb_IR_TEMP, 16);
         showChart();
     }
     //////////////////// Group 2 ///////////////////////
