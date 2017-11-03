@@ -395,6 +395,7 @@ class MyButton extends React.Component {
           Sensors[13].dataQueue.enqueue(object["data"].right_button);
           Sensors[14].dataQueue.enqueue(object["data"].baro);
           Sensors[15].dataQueue.enqueue(object["data"].altitude);
+          Sensors[16].dataQueue.enqueue(object["data"].ir_temperature);
           showChart();
 
         }
