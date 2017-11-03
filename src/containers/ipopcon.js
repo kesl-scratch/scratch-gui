@@ -31,7 +31,7 @@ Ipopcon.prototype.getBlocks = function () {
 		     **/
 		    init: function() {
 			    this.jsonInit({
-				    "message0": "가속도 x",
+				    "message0": "가속도x(g)",
 				    "args0": [
 				    ],
 
@@ -52,7 +52,7 @@ Ipopcon.prototype.getBlocks = function () {
 		     **/
 		    init: function() {
 			    this.jsonInit({
-				    "message0": "가속도 y",
+				    "message0": "가속도y(g)",
 				    "args0": [
 				    ],
 
@@ -73,7 +73,7 @@ Ipopcon.prototype.getBlocks = function () {
 		     **/
 		    init: function() {
 			    this.jsonInit({
-				    "message0": "가속도 z",
+				    "message0": "가속도z(g)",
 				    "args0": [
 				    ],
 
@@ -94,7 +94,7 @@ Ipopcon.prototype.getBlocks = function () {
 		     **/
 		    init: function() {
 			    this.jsonInit({
-				    "message0": "가속도 평균",
+				    "message0": "가속도 평균(g)",
 				    "args0": [
 				    ],
 
@@ -115,7 +115,7 @@ Ipopcon.prototype.getBlocks = function () {
          **/
         init: function() {
           this.jsonInit({
-            "message0": "자력 x",
+            "message0": "자기장x(μT)",
             "args0": [
             ],
 
@@ -136,7 +136,7 @@ Ipopcon.prototype.getBlocks = function () {
          **/
         init: function() {
           this.jsonInit({
-            "message0": "자력 y",
+            "message0": "자기장y(μT)",
             "args0": [
             ],
 
@@ -157,7 +157,7 @@ Ipopcon.prototype.getBlocks = function () {
          **/
         init: function() {
           this.jsonInit({
-            "message0": "자력 z",
+            "message0": "자기장z(μT)",
             "args0": [
             ],
 
@@ -178,7 +178,7 @@ Ipopcon.prototype.getBlocks = function () {
          **/
         init: function() {
           this.jsonInit({
-            "message0": "자이로스코프 x",
+            "message0": "자이로스코프x︒/s",
             "args0": [
             ],
 
@@ -199,7 +199,7 @@ Ipopcon.prototype.getBlocks = function () {
          **/
         init: function() {
           this.jsonInit({
-            "message0": "자이로스코프 y",
+            "message0": "자이로스코프y︒/s",
             "args0": [
             ],
 
@@ -220,7 +220,7 @@ Ipopcon.prototype.getBlocks = function () {
          **/
         init: function() {
           this.jsonInit({
-            "message0": "자이로스코프 z",
+            "message0": "자이로스코프z︒/s",
             "args0": [
             ],
 
@@ -283,7 +283,7 @@ Ipopcon.prototype.getBlocks = function () {
          **/
         init: function() {
           this.jsonInit({
-            "message0": "온도",
+            "message0": "온도℃",
             "args0": [
             ],
 
@@ -304,7 +304,7 @@ Ipopcon.prototype.getBlocks = function () {
          **/
         init: function() {
           this.jsonInit({
-            "message0": "밝기",
+            "message0": "밝기(lux)",
             "args0": [
             ],
 
@@ -325,7 +325,7 @@ Ipopcon.prototype.getBlocks = function () {
          **/
         init: function() {
           this.jsonInit({
-            "message0": "기압",
+            "message0": "기압(mbar)",
             "args0": [
             ],
 
@@ -346,7 +346,7 @@ Ipopcon.prototype.getBlocks = function () {
          **/
         init: function() {
           this.jsonInit({
-            "message0": "고도",
+            "message0": "고도(m)",
             "args0": [
             ],
 

@@ -133,6 +133,8 @@ const MenuBar = function MenuBar () {
 				    </div>
 				</div>
 			</div>
+			<SaveButton className={styles.menuItem} />
+			<LoadButton className={styles.menuItem} />
 			<LanguageSelector className={styles.menuItem} />
 		</Box>
 	);
