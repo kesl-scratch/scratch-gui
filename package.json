@@ -83,13 +83,12 @@
     "redux-throttle": "0.1.1",
     "rimraf": "^2.6.1",
     "scratch-audio": "latest",
-    "scratch-paint": "latest",
-    "scratch-blocks": "git+https://github.com/kesl-scratch/scratch-blocks.git",
+    "scratch-blocks": "git+https://github.com/kesl-scratch/scratch-blocks.git#ipopcon",
     "scratch-l10n": "^2.0.0",
+    "scratch-paint": "latest",
     "scratch-render": "latest",
     "scratch-storage": "^0.2.0",
-    "scratch-vm": "git+https://github.com/kesl-scratch/scratch-vm.git",
-    "websocket": "git+https://github.com/theturtle32/WebSocket-Node.git",
+    "scratch-vm": "git+https://github.com/kesl-scratch/scratch-vm.git#ipopcon",
     "selenium-webdriver": "3.5.0",
     "startaudiocontext": "1.2.1",
     "style-loader": "^0.19.0",
@@ -99,6 +98,7 @@
     "web-audio-test-api": "^0.5.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2",
+    "websocket": "git+https://github.com/theturtle32/WebSocket-Node.git",
     "xhr": "2.4.0"
   },
   "jest": {
@@ -113,5 +113,11 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/test/__mocks__/styleMock.js"
     }
+  },
+  "dependencies": {
+    "chrome-fs": "^10.0.0",
+    "fs": "0.0.1-security",
+    "html5-fs": "^0.1.1",
+    "node-mouse": "0.0.2"
   }
 }
