@@ -15,24 +15,9 @@ class LoadButton extends React.Component {
         ]);
     }
     handleChange (e) {
-      const reader = new FileReader();
-      reader.onload = () => this.props.loadProject(reader.result);
-
-      var f = null;
-
-      JSZip.loadAsync(e.target.files[0]).then(function(zip) {
-        console.log(zip.files["project.json"]);
-        return zip.files["project.json"].async('blob');
-
-      }).then(function (filedata) {
-          f =  new File([filedata], "project.json");
-          return f;
-
-        }).then(function (file) {
-          reader.readAsText(file);
-        });
-
-      //reader.readAsText(e.target.files[0]);
+        const reader = new FileReader();
+        reader.onload = () => this.props.loadProject(reader.result);
+        reader.readAsText(e.target.files[0]);
 
     }
     handleClick () {
